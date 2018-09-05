@@ -1,4 +1,18 @@
-/* My fade-in animation */
+/* TECHNIGO COLOR SCHEME for now and future reference
+background: #0025FF; blue
+background: #FE3525; red
+background:  #FF0055; darker pink
+background:  #F7941F; orange
+background:  #FFAEC1; pink
+background:  #FFFFFF; white
+background:  #0C56AF; darker blue
+background:  #FC3323; another red
+background:  #D1A537; darker yellow
+background:  #FB3222; third red
+*/
+
+
+/* My fade-in animation for the name tags*/
 @keyframes fadein {
     0%   {opacity: 0.0;}
     10%  {opacity: 0.0;}
@@ -10,29 +24,40 @@
     38%  {opacity: 0.3}
     40%  {opacity: 0.35;}
     45%  {opacity: 0.4;}
-    50% {opacity: 0.5;}
-    60%   {opacity: 0.6;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.6;}
     70%  {opacity: 0.7;}
     80%  {opacity: 0.8;}
     90%  {opacity: 0.9;}
-    100%  {opacity: 1.0;}
-
+    100% {opacity: 1.0;}
 }
+
+/* My background animation for different colors when loading */
+@keyframes colorswitch {
+    0%    {background-color: #0025FF;}
+    25%   {background-color: #FE3525;}
+    66%   {background-color: #FFAEC1;}
+    100%  {background-color: #F7941F;}
+}
+
+/* Sets border box and "handwriting-like" Google font for entire document */
 * {
   box-sizing: border-box;
   font-family: 'Gloria Hallelujah', cursive;
 }
 
 html {
-  background: #0025FF;
+  background:  #F7941F;
   color: #fff;
+  animation-name: colorswitch;
+  animation-duration: 5s;
 }
 
 header {
   padding: 20px;
   text-align: center;
-
 }
+
 h1 {
   font-size: 60px;
   margin-bottom: 0px;
@@ -55,12 +80,26 @@ h1 {
 .yearbook {
   padding: 0 20px;
 }
-.main-card-container {
+
+/* MY ORIGINAL SOLUTION CENTERING IMAGES - Made last row look off-grid
+  .main-card-container {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+} */
+
+/* My version 2 with GRID SOLUTION that left aligns the last row of cards.*/
+.main-card-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 0px;
+  justify-content: center;
 }
+
 .student-card {
   display: inline-block;
   background-color: #F1F1F1;
