@@ -81,7 +81,7 @@ h1 {
   padding: 0 20px;
 }
 
-/* MY ORIGINAL SOLUTION CENTERING IMAGES - Made last row look off-grid
+/* MY ORIGINAL SOLUTION CENTERING IMAGES - Made last row look off-grid -  Left in for comparison.
   .main-card-container {
   display: inline-block;
   margin-left: auto;
