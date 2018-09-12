@@ -1,16 +1,4 @@
-/* TECHNIGO COLOR SCHEME for now and future reference
-background: #0025FF; blue
-background: #FE3525; red
-background:  #FF0055; darker pink
-background:  #F7941F; orange
-background:  #FFAEC1; pink
-background:  #FFFFFF; white
-background:  #0C56AF; darker blue
-background:  #FC3323; another red
-background:  #D1A537; darker yellow
-background:  #FB3222; third red
-*/
-
+/* ADAM CSS FOR TECHNIGO YEARBOOK ASSIGMENT */
 
 /* My fade-in animation for the name tags*/
 @keyframes fadein {
@@ -77,20 +65,8 @@ h1 {
   margin-top: 55px;
 }
 
-.yearbook {
-  padding: 0 20px;
-}
-
-/* MY ORIGINAL SOLUTION CENTERING IMAGES - Made last row look off-grid -  Left in for comparison.
-  .main-card-container {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-} */
-
-/* My version 2 with GRID SOLUTION that left aligns the last row of cards.*/
 .main-card-container {
+  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
